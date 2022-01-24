@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import Item from "./Item.js";
+import Experiment from "./experiment"
 import "./index.css";
 import useFetch from "./useFetch";
 
@@ -28,7 +29,7 @@ export default function Shop() {
               </div>
           </div>  :
           <div className="container pt-4 mx-auto">
-              <div className="flex gap-4">
+              <div className="flex justify-center gap-4">
                   {items.map((item) => (
                       <Item key={item.id} info={item} />
                   ))}
